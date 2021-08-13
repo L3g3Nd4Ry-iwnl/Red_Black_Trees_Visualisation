@@ -7,7 +7,7 @@ Red Black Tree Data Structure Visualized using Python Flask with the help of Glo
 # 💁Contributors
 Created with 💖 by :
 - [Aadhith S](https://github.com/L3g3Nd4Ry-iwnl)
-- [Aravindh S]
+- [Aravindh S](https://github.com/Aravindh222)
 - [Ashwith N]
 - [Hareesh V](https://github.com/hareesh2904)
 ## 💌 Contributing
