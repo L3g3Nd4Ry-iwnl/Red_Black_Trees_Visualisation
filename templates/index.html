@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>RBT_Home</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slider_index.css') }}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <!-- fevicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/iframe_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/neweffect.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/newtitle.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@319;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;319;400&display=swap" rel="stylesheet">
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="{{ url_for('static', filename='images/loading.gif') }}" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10">
+                        <div class="menu-area">
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <ul class="menu-area-main">
+                                        <li class="active"> <a href="/">Home</a> </li>
+                                        <li> <a href="/rbtexplore">Explore RBT</a> </li>
+                                        <li> <a href="/live"> Live Demo</a> </li>
+                                        <li> <a href="/aboutus">About Us</a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+    </header>
+    <!-- end header -->
+    <div class="starwars-demo">
+        <h2 class="byline" id="byline" style="font-size: 80px;font-family: 'Oswald', sans-serif;word-spacing: 50px;">Red Black Trees</h2>
+    </div>
+    <br><br>
+
+    <section class="introtext" style="margin-top: 650px;">
+        <div>
+            <h1 class="intro" style="font-size: 50px;font-family: montserrat;font-weight: 90%;"><b>Introduction to RBT</b></h1><br>
+            <div class="text-1">
+            <p style="font-family: Helvetica, Arial, sans-serif;color: rgb(173, 169, 169);">
+                A red-black tree is a kind of self-balancing binary search tree where each node has an extra bit, and that bit is often interpreted as the colour (red or black). These colours are used to ensure that the tree remains balanced during insertions and deletions. Although the balance of the tree is not perfect, it is good enough to reduce the searching time and maintain it around O(log n) time, where n is the total number of elements in the tree. This tree was invented in 1972 by Rudolf Bayer.
+            </p>
+            <br>
+            <p style="font-family: Helvetica, Arial, sans-serif;color: rgb(173, 169, 169);">
+            It must be noted that as each node requires only 1 bit of space to store the colour information, these types of trees show identical memory footprint to the classic (uncoloured) binary search tree.
+            </p>
+            </div>
+        </div>
+        <br><br><br><br>
+
+    </section>
+
+    <!-- music-box  -->
+    <div class="music-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="for-box">
+                        <i class="fa fa-clock-o" style="font-size:180px;color:red;"></i>
+                        <h3>Time Complexity</h3>
+                        <p>For Search, Insert and Delete the time complexity is O(log n)</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="for-box">
+                        <i style="margin-top: 35px;margin-bottom: 35px;"><img src="{{ url_for('static', filename='images/treeicon.png') }}" alt="icon"/></i>
+                        <h3>Self Balancing</h3>
+                        <p>The Self Balancing Property of Red Black Tree is a prominant advantage over AVL Trees </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="for-box">
+                        <i style="margin-top: 35px;margin-bottom: 13px;"><img src="{{ url_for('static', filename='images/tree-3.png') }}" alt="icon"/></i>
+                        <h3>Tree node color</h3>
+                        <p>Each node in the tree is either Red or Black. The root is always Black </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="for-box">
+                        <i style="margin-top: 5px;margin-bottom: 5.5px;"><img src="{{ url_for('static', filename='images/ballblack.png') }}" alt="icon"/></i>
+                        <h3> Black - height </h3>
+                        <p>All simple paths from any node to a descendant leaf have the same number of black nodes </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end music-box  -->
+
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 padding">
+                <div class="img-box">
+                    <figure><img src="images/musicbg.jpg" alt="img" /></figure>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 padding">
+                <div class="text-box">
+                    <div class="box">
+                        <i><img src="images/5.png"/></i>
+                        <h3>MEET OUR Music STARS</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable
+                            <br> content of a page when looking at its layout. The point of using Lorem </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--  footer -->
+    <footr>
+        <div class="copyright">
+            <p>© 2021 All Rights Reserved.</p>
+        </div>
+    </footr>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugin.js') }}"></script>
+    <!-- sidebar -->
+    <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="{{ url_for('static', filename='js/titlenew.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+
+            $(".zoom").hover(function() {
+
+                $(this).addClass('transition');
+            }, function() {
+
+                $(this).removeClass('transition');
+            });
+        });
+    </script>
+</body>
+
+</html>

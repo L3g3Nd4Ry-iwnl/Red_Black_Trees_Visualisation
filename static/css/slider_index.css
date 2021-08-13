@@ -1,0 +1,43 @@
+#imageSlider
+{
+    width:100%;
+    background-color: black;
+}
+.carousel-caption
+{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+.tales1
+{
+    margin-left: 300px;
+    width:60%;
+    height:550px;
+    /* filter:blur(3px) */
+}
+.tales2
+{
+    margin-left: 148px;
+    width:80%;
+    height:550px;
+    /* filter:blur(3px) */
+}
+.tales3
+{
+    margin-left: 75px;
+    width:90%;
+    height:550px;
+    /* filter:blur(3px) */
+}
+
+.carousel-caption h5
+{
+    color: #fff;
+    font-size: 42px;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}

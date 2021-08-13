@@ -1,0 +1,53 @@
+.iframe{
+    width:550px;
+    height:340px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 50px;
+    border-style: none!important;
+    position:relative;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+iframe{
+    position: absolute;
+    width: 1500px;
+    height: 2000px;
+    top: -75px;
+    right: -900px;
+    left:-90px;
+}
+
+.iframetext-l{
+    margin-left: 200px;
+    margin-top: 100px;
+    /* text-align: center;  */
+}
+
+.iframetext-r{
+    margin-right: 300px;
+    margin-top: 100px; 
+    /* text-align: center; */
+}
+
+.iframetext-l h2{
+    text-shadow: 2px 4px #cf2323;
+}
+
+.iframetext-r h2{
+    text-shadow: 2px 4px #cf2323;
+}
+
+.introtext h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+.text-1 p{
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 250px;
+    margin-right: 250px;
+}

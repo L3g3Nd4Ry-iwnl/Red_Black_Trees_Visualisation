@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>RBT_About</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <!-- fevicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <style>
+        .aboutclass{
+            margin-left: 250px;
+            margin-right: 250px;
+            margin-top: 40px;
+            margin-bottom:30px;
+            background:  white;
+            border-radius: 25px;
+            box-shadow: 10px 10px 5px #6f2232;
+        }
+
+        .containerr {
+            position: relative;
+            width: 50%;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #c3073f;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+        }
+        
+        .containerr:hover .overlay {
+            width: 100%;
+        }
+        
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            padding-right: 20px;
+            padding-left:20px;
+            
+        }
+        .image {
+            display: block;
+            max-width: 100%;
+            max-height: auto;
+        }
+    </style>
+</head>
+<!-- body -->
+
+<body class="main-layout about-page">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="{{ url_for('static', filename='images/loading.gif') }}" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="/"><img src="{{ url_for('static', filename='images/logo2.png') }}" alt="logo" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10">
+                        <div class="menu-area">
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <ul class="menu-area-main">
+                                        <li> <a href="/">Home</a> </li>
+                                        <li> <a href="/rbtexplore">Explore RBT</a> </li>
+                                        <li> <a href="/live"> Live Demo</a> </li>
+                                        <li class="active"> <a href="/aboutus">About Us</a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+    </header>
+    <!-- end header -->
+    <main>
+        <div class="abouttclass">
+            <div class="d-flex flex-column align-items-center">
+                <div class="containerr m-4">
+                    <img src="../static/images/aadhith.jpg" alt="Aadhith" class="image">
+                    <div class="overlay">
+                        <div class="text">Aadhith S<br>Frontend and Backend Developer<br>BTech CSE @Amrita School of
+                            Engineering,<br>Coimbatore<br></div>
+                    </div>
+                </div>
+                <div class="containerr m-4">
+                    <img src="../static/images/ashwith.png" alt="Ashwith" class="image">
+                    <div class="overlay">
+                        <div class="text">Ashwith N<br>Frontend and Backend Developer<br>BTech CSE @Amrita School of
+                            Engineering,<br>Coimbatore<br></div>
+                    </div>
+                </div>
+                <div class="containerr m-4">
+                    <img src="../static/images/aravind.jpg" alt="Aravind" class="image">
+                    <div class="overlay">
+                        <div class="text">Aravind S<br>Vpython Developer<br>BTech CSE @Amrita School of
+                            Engineering,<br>Coimbatore<br></div>
+                    </div>
+                </div>
+                <div class="containerr m-4">
+                    <img src="../static/images/hareesh.jpg" alt="Hareesh" class="image">
+                    <div class="overlay">
+                        <div class="text">Hareesh V<br>Vpython Developer<br>BTech CSE @Amrita School of
+                            Engineering,<br>Coimbatore<br></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!--  footer -->
+    <footr>
+        <div class="copyright">
+            <p>© 2021 All Rights Reserved.</p>
+        </div>
+    </footr>
+    <!-- end footer -->
+
+    <!-- Javascript files-->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugin.js') }}"></script>
+    <!-- sidebar -->
+    <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+
+            $(".zoom").hover(function() {
+
+                $(this).addClass('transition');
+            }, function() {
+
+                $(this).removeClass('transition');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>RBT_Explore</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <!-- fevicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/iframe_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/rbtexplore.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/rotate.css') }}"> -->
+    <style>
+        #error{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left:100px;
+            margin-right: 100px;
+            border-radius: 10px;
+            background-color: black;
+            color: whitesmoke;
+            box-shadow: 10px 10px 5px #cf2323;
+        }
+        #error1{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left:250px;
+            margin-right: 250px;
+            border-radius: 10px;
+            background-color: black;
+            color: whitesmoke;
+            box-shadow: 10px 10px 5px #cf2323;
+        }
+    </style>
+</head>
+<!-- body -->
+
+<body class="main-layout album-page">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="{{ url_for('static', filename='images/loading.gif') }}" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="/"><img src="{{ url_for('static', filename='images/logo2.png') }}" alt="logo" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10">
+                        <div class="menu-area">
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <ul class="menu-area-main">
+                                        <li> <a href="/">Home</a> </li>
+                                        <li class="active"> <a href="/rbtexplore">Explore RBT</a> </li>
+                                        <li> <a href="/live"> Live Demo</a> </li>
+                                        <li> <a href="/aboutus">About Us</a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+    </header>
+    <!-- end header -->
+
+    <br><br>
+
+<div class="text-center">
+    <h1>
+       Properties of RBT 
+    </h1>
+
+    <br>
+
+    <p style="text-align: left;margin-left: 20%; width:fit-content" class="p-5" id="error">
+        <b style='font-size:large;'><u>Red-Black tree is a self-balancing Binary Search Tree(BST) where every node follows the following rules:</u></b><br>
+
+        <b>Rule &nbsp;1:</b> &nbsp;&nbsp;&nbsp;&nbsp; Every node has a color either red or black.</br>
+        <b>Rule 2:</b> &nbsp;&nbsp;&nbsp;&nbsp; Root of tree is always black.</br>
+        <b>Rule 3:</b> &nbsp;&nbsp;&nbsp;&nbsp; There are no two adjacent red nodes (A red node cannot have a red parent or red child).</br>
+        <b>Rule 4:</b> &nbsp;&nbsp;&nbsp;&nbsp; Every path from root to a NULL node has same number of black nodes.
+    </p>
+    <br><br><br><br>
+    <h1>
+        Key Insertion Operation 
+    </h1>
+
+    <br>
+
+    <p style="text-align: left;margin-left: 15%;width:fit-content" class="p-5" id="error">
+        <b style='font-size:large;'><u>If T is a non-empty tree, then we do the following:</u></b></br>
+
+        <b>&nbsp;1:</b>&nbsp;&nbsp;&nbsp;&nbsp; Use the BST insert algorithm to add K to the tree.</br>
+        <b>2:</b>&nbsp;&nbsp;&nbsp;&nbsp; Color the node containing K red.</br>
+        <b>3:</b>&nbsp;&nbsp;&nbsp;&nbsp; Restore red-black tree properties (if necessary).
+    </p>
+
+    <br><br>
+
+    <p style="text-align: left;margin-left: 55%;width:fit-content" class="p-5" id="error">
+        <b style='font-size:large;'><u>To restore the violated property, we use:</u></b><br>
+        <b>&nbsp;1:</b>&nbsp;&nbsp;&nbsp;&nbsp; Recoloring <br>
+        <b>2:</b>&nbsp;&nbsp;&nbsp;&nbsp; Rotation (Left, Right, Double) 
+    </p>
+
+    <br><br>
+
+    <p style="text-align: left;margin-left: 15%;width:fit-content" class="p-5" id="error">
+        <b style='font-size:large;'><u>The algorithm has mainly two cases depending upon the color of Uncle(Sibling of Parent node)</u></b></br>
+        <b>&nbsp;1:</b>&nbsp;&nbsp;&nbsp;&nbsp; If Uncle is red, we do recoloring.<br>
+        <b>2:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If Uncle is black, we do rotations and/or recoloring.
+    </p>
+    
+    <br><br>
+
+    <p style="text-align: left;margin-left: 55%;width:fit-content" class="p-5" id="error">
+        <b style='font-size:large;'><u> Let X be the newly inserted node:</u></b><br>
+        <b>&nbsp;1:</b>&nbsp;&nbsp;&nbsp;&nbsp; Change the color of Parent and Uncle as BLACK <br>
+        <b>2:</b>&nbsp;&nbsp;&nbsp;&nbsp; Change the color of Grand-Parent as RED <br>
+        <b>3:</b>&nbsp;&nbsp;&nbsp;&nbsp; Make X's Grand-Parent as the new X. <br>
+        <b>4:</b>&nbsp;&nbsp;&nbsp;&nbsp; Repeat the same above steps on the newly obtained X. 
+    </p>
+
+    <br><br>
+
+    <p>
+        <p class="p-5" id="error1">
+            <b style='font-size:large;'><u>If X's Uncle is BLACK and X's parent is not BLACK then there can be four configurations for X:</u></b>
+        </p>
+        
+        <br><br>
+        <div class="d-flex flex-row">    
+            <div class="iframe">
+                <iframe src="https://www.glowscript.org/#/user/L3g3nd4ry/folder/RBT/program/LLrotation" frameborder="0"></iframe>
+            </div>
+            <div class="iframetext-l">
+                <h2 style="font-size: 45px;">&#10122; &nbsp; Left - Left Case</h2></br>
+                <h3 style="font-size: 30px;">Right Rotation</h3></br>
+            </div>
+        </div>
+
+        <div class="d-flex flex-row-reverse"> 
+            <div class="iframe">
+                <iframe src="https://www.glowscript.org/#/user/L3g3nd4ry/folder/RBT/program/LRrotation" frameborder="0"></iframe>
+            </div>
+            <div class="iframetext-r">
+                <h2 style="font-size: 45px;">&#10123; &nbsp; Left - Right Case</h2></br>
+                <h3 style="font-size: 30px;">Left - Right Rotation</h3></br>
+            </div>
+        </div>
+        
+        <div class="d-flex flex-row"> 
+            <div class="iframe">
+                <iframe src="https://www.glowscript.org/#/user/L3g3nd4ry/folder/RBT/program/RRrotation" frameborder="0"></iframe>
+            </div>
+            <div class="iframetext-l">
+                <h2 style="font-size: 45px;">&#10124; &nbsp; Right - Right Case</h2></br>
+                <h3 style="font-size: 30px;">Left Rotation</h3></br>
+            </div>
+        </div>
+        
+        <div class="d-flex flex-row-reverse"> 
+            <div class="iframe">
+                <iframe src="https://www.glowscript.org/#/user/L3g3nd4ry/folder/RBT/program/RLRotation" frameborder="0"></iframe>
+            </div>
+            <div class="iframetext-r">
+                <h2 style="font-size: 45px;">&#10125; &nbsp; Right - Left Case</h2></br>
+                <h3 style="font-size: 30px;">Right - Left Rotation</h3></br>
+            </div>
+        </div>
+    </p>
+
+    
+
+    <h1>
+        Deletion of a node
+    </h1>
+
+    <br>
+
+    <p style="text-align: left;margin-left: 15%;width:fit-content" class="p-5" id="error">
+        <b>On deleting a node, the number of black nodes in a path changes.</b></br><br>
+        <b><u>Two things to keep in mind:</u></b></br>
+
+        <b>&nbsp;1:</b>&nbsp;&nbsp;&nbsp;&nbsp; If a black node is deleted and replaced by a black child, then the child is double black.</br>
+        <b>2:</b>&nbsp;&nbsp;&nbsp;&nbsp; Also we check color of sibling of delete node.
+    </p>
+
+    <br><br>
+
+    <p style="text-align: left;margin-left: 55%;width:fit-content" class="p-5" id="error">
+        <b><u>CASE - 1: Sibling is black and both of it's children are black</u></b></br>
+
+        <b>&nbsp;1:</b>&nbsp;&nbsp;&nbsp;&nbsp; Here we need to see the color of Parent node. </br>
+        <b>2:</b>&nbsp;&nbsp;&nbsp;&nbsp; If it is RED, then change it to Black. </br>
+        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( OR )</b></br>
+        <b>2:</b>&nbsp;&nbsp;&nbsp;&nbsp; If it was initially BLACK, then change it to Double Black. </br>
+        <b>3:</b>&nbsp;&nbsp;&nbsp;&nbsp; Also change the color of sibling ot RED. 
+    </p>
+
+    <br><br>
+
+    <p style="text-align: left;margin-left: 15%;width:fit-content" class="p-5" id="error">
+        <b><u>CASE - 2: Sibling is BLACK and it's Left-Child is RED</u></b></br>
+
+        <b>&nbsp;1:</b>&nbsp;&nbsp;&nbsp;&nbsp; Change the color of Sibling to RED and it's Child to BLACK. </br>
+        <b>2:</b>&nbsp;&nbsp;&nbsp;&nbsp; Now do Right Rotation at the Sibling. </br>
+	    <b>3:</b>&nbsp;&nbsp;&nbsp;&nbsp; The Case is now similar to Case - 3 which follows next. 
+    </p>
+
+    <br><br>
+
+    <p style="text-align: left;margin-left: 55%;width:fit-content" class="p-5" id="error">
+        <b><u>CASE - 3: Sibling is BLACK and it's Right-Child is RED</u></b></br>
+
+        <b>&nbsp;1:</b>&nbsp;&nbsp;&nbsp;&nbsp; Change the color of Right-Child to BLACK. </br>
+        <b>2:</b>&nbsp;&nbsp;&nbsp;&nbsp; Exchange the colors of Parent and Sibling. </br>
+	    <b>3:</b>&nbsp;&nbsp;&nbsp;&nbsp; Do Left Rotation at the Parent. </br>
+	    <b>4:</b>&nbsp;&nbsp;&nbsp;&nbsp; Remove Double Black. 
+    </p>
+
+    <br><br>
+
+    <p style="text-align: left;margin-left: 15%;width:fit-content" class="p-5" id="error">
+        <b><u>CASE - 4: Sibling color is RED</u></b></br>
+
+        <b>&nbsp;1:</b>&nbsp;&nbsp;&nbsp;&nbsp; Exchange the colors of Parent and Sibling. </br>
+	    <b>2:</b>&nbsp;&nbsp;&nbsp;&nbsp; Do Left Rotation at the Parent. </br>
+	    <b>3:</b>&nbsp;&nbsp;&nbsp;&nbsp; Now this Case has been converted to Case - 1. 
+    </p>
+</div>
+<br><br><br><br>
+   
+
+    <!--  footer -->
+    <footr>
+        <div class="copyright">
+            <p>© 2021 All Rights Reserved.</p>
+        </div>
+    </footr>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugin.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/rbtexplore.js') }}"></script>
+    <!-- sidebar -->
+    <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+
+            $(".zoom").hover(function() {
+
+                $(this).addClass('transition');
+            }, function() {
+
+                $(this).removeClass('transition');
+            });
+        });
+    </script>
+</body>
+
+</html>

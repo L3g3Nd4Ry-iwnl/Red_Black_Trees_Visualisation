@@ -1,0 +1,22 @@
+.iframe{
+    width:1220px;
+    height:628px;
+    margin: auto auto;
+    margin-left: 150px;
+    margin-top: 0px;
+    margin-right: 50px;
+    border-style: none!important;
+    position:relative;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+iframe{
+    position: absolute;
+    width: 1500px;
+    height: 2000px;
+    top: -72px;
+    left: 5px;
+    right: 30px;
+}
